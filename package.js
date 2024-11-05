@@ -1,16 +1,16 @@
 Package.describe({
-  name: 'peerlibrary:data-lookup',
+  name: 'mrspark:data-lookup',
   summary: "Reactively lookup a field in the object",
-  version: '0.3.0',
+  version: '1.0.0',
   git: 'https://github.com/peerlibrary/meteor-data-lookup.git'
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom('METEOR@1.8.1');
+  api.versionsFrom('3.0.4');
 
   // Core dependencies.
   api.use([
-    'coffeescript@2.4.1',
+    'coffeescript@2.7.0',
     'ecmascript',
     'underscore',
     'tracker'
@@ -18,7 +18,7 @@ Package.onUse(function (api) {
 
   // 3rd party dependencies.
   api.use([
-    'peerlibrary:computed-field@0.10.0'
+    'mrspark:computed-field@1.0.0'
   ]);
 
   api.export('DataLookup');
@@ -27,11 +27,11 @@ Package.onUse(function (api) {
 });
 
 Package.onTest(function (api) {
-  api.versionsFrom('METEOR@1.8.1');
+  api.versionsFrom('3.0.4');
 
   // Core dependencies.
   api.use([
-    'coffeescript@2.4.1',
+    'coffeescript@2.7.0',
     'ecmascript',
     'random',
     'underscore',
@@ -40,7 +40,7 @@ Package.onTest(function (api) {
 
   // Internal dependencies.
   api.use([
-    'peerlibrary:data-lookup'
+    'mrspark:data-lookup'
   ]);
 
   // 3rd party dependencies.
